@@ -1,0 +1,17 @@
+[package]
+name = "claw_machine"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+# amethyst = { git = "https://github.com/amethyst/amethyst", rev="fb64af9833f0d8838011ffc7635e0a459f3e3b4a" }
+amethyst = "0.15.0"
+amethyst_physics = "0.2.0"
+amethyst_nphysics = "0.2.0"
+
+[features]
+default = ["metal", "amethyst/gltf"]
+empty = ["amethyst/empty"]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
