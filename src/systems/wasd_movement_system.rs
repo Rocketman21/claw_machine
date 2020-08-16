@@ -8,8 +8,8 @@ use amethyst::ecs::{
 	Write,
 	Join,
 };
-use amethyst::core::{math::{Vector3}, Transform};
-use amethyst::{input::{InputHandler, StringBindings}};
+use amethyst::core::{math::Vector3, Transform};
+use amethyst::input::{InputHandler, StringBindings};
 
 #[derive(Default)]
 pub struct ControlledEntity {

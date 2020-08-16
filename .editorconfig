@@ -1,0 +1,7 @@
+# This file is used for Github to make it display tab size as 4 chars instead of default 8
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
