@@ -1,8 +1,8 @@
 (
 	axes: {
-		"x": Emulated(pos: Key(S), neg: Key(W)),
+		"x": Emulated(pos: Key(D), neg: Key(A)),
 		"y": Emulated(pos: Key(Space), neg: Key(LShift)),
-		"z": Emulated(pos: Key(A), neg: Key(D)),
+		"z": Emulated(pos: Key(S), neg: Key(W)),
 	},
 	actions: {
 		"toggle_control": [[Key(Tab)]],

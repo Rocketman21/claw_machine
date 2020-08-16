@@ -3,7 +3,9 @@ pub use self::{
 	camera::add_camera,
 	player::Player,
 	player::add_player,
-	toy_machine::add_toy_machine,
+	claw_machine::add_claw_machine,
+	claw_holder::add_claw_holder,
+	claw::add_claw,
 	ground::add_ground,
 	standard_entity::PhysicalEntityBuilder,
 };
@@ -11,6 +13,8 @@ pub use self::{
 mod light;
 mod camera;
 mod player;
-mod toy_machine;
+mod claw_machine;
+mod claw_holder;
+mod claw;
 mod ground;
 mod standard_entity;

@@ -8,7 +8,8 @@ use amethyst::{
 		mtl::{Material, MaterialDefaults},
 		palette::{LinSrgba},
 	},
-	assets::{Loader, AssetStorage, Handle},
+	assets::{Loader, AssetStorage, Handle, Prefab},
+	gltf::{GltfSceneAsset, GltfSceneFormat, GltfPrefab}
 };
 
 pub fn create_mesh(world: &mut World, mesh_data: MeshData) -> Handle<Mesh> {
@@ -53,4 +54,17 @@ pub fn create_material(
 	);
 
 	material
+}
+
+pub fn create_gltf(world: &World, path: &str) -> Handle<Prefab<GltfPrefab>> {
+	let loader = world.read_resource::<Loader>();
+	let gltf_storage = world.read_resource::<AssetStorage<GltfSceneAsset>>();
+	let gltf = loader.load(
+		path,
+		GltfSceneFormat::default(),
+		(),
+		&gltf_storage
+	);
+
+	gltf
 }
